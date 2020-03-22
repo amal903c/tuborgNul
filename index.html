@@ -2,24 +2,173 @@
 <html lang="da">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     <title>Tuborg Nul</title>
-    <link rel="stylesheet" href="style.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+
+    <style>
+        /*generelle indstillinger */
+        * {
+            box-sizing: border-box;
+
+        }
+
+        body {
+            margin: 0;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        /* section splash */
+
+        #splash {
+            display: grid;
+            grid-template-rows: 70px auto;
+        }
+
+
+
+        /* navigation på sitet MEDIA */
+
+        .hide {
+            display: none;
+        }
+
+        @media only screen and (min-width: 768px) {
+
+
+            #menu {
+                /*det der poppper ned */
+                opacity: 1;
+                list-style-type: none;
+                display: flex;
+                justify-content: flex-end;
+                width: 100%;
+
+            }
+
+            #menuknap {
+                /*dåsen */
+                display: none;
+            }
+
+        }
+
+        .wrapper {
+            /*wrapper omkring burgermenu */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+
+        #nav {
+            background-color: #FAC177;
+        }
+
+        .logo {
+            /* billedet med logo */
+            height: 60px;
+            width: 60px;
+        }
+
+        .burgermenu {
+            /* billedet med burgermenu */
+            height: 60px;
+            width: 60px;
+        }
+
+        /* main */
+        main {
+            /* container for splash billedet */
+
+            background-image: url(billeder/splash.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 90vh;
+
+            display: grid;
+        }
+
+        h1 {
+            font-family: 'Abril Fatface', cursive;
+            color: #FAC177;
+            background-color: #093A82;
+            text-align: center;
+            margin: 0 auto;
+
+            font-size: 2rem;
+            width: 60vw;
+            padding: 1.5rem;
+            border-radius: 20px;
+        }
+
+        h2 {
+            font-family: 'Abril Fatface', cursive;
+            color: #FAC177;
+            background-color: #093A82;
+            text-align: center;
+
+            margin-bottom: 0;
+            margin-left: 10vw;
+            font-size: 1rem;
+            width: 40vw;
+            padding: 1.5rem;
+            border-radius: 20px;
+        }
+
+        .overskrift {
+            /* container for overskriften */
+            align-self: center;
+        }
+
+    </style>
+
+
+
+
 </head>
 
 <body>
 
+    <section id="splash">
+
+        <div id="nav">
+            <div class="wrapper">
+                <div id="logo">
+                    <a>
+                        <img class="logo" src="billeder/logo.svg" alt="Tuborg nul kampange logo">
+                    </a>
+                </div>
+
+                <div id="menuknap">
+                    <img class="burgermenu" src="billeder/burgermenu.svg">
+                </div>
 
 
+                <div id="lukkeknap" class="hide">X</div>
+                <ul id="menu" class="hide">
+                    <li><a href="#">Kampangevideo</a></li>
+                    <li><a href="#">Smag</a></li>
+                    <li><a href="#">Spil</a></li>
 
+                </ul>
+            </div>
 
+        </div>
+        <main>
+            <div class="overskrift">
+                <h2>-en øl for alle</h2>
+                <h1>Tuborg Nul</h1>
+            </div>
+        </main>
+    </section>
 
-
-
-
-
-    <script src=""></script>
 </body>
 
 </html>
