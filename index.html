@@ -9,133 +9,11 @@
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
 
 
-    <style>
-        /*generelle indstillinger */
-        * {
-            box-sizing: border-box;
+    <link rel="stylesheet" href="style.css">
 
-        }
-
-        body {
-            margin: 0;
-        }
-
-        img {
-            width: 100%;
-        }
-
-        /* section splash */
-
-        #splash {
-            display: grid;
-            grid-template-rows: 70px auto;
-        }
-
-
-
-        /* navigation på sitet MEDIA */
-
-        .hide {
-            display: none;
-        }
-
-        @media only screen and (min-width: 768px) {
-
-
-            #menu {
-                /*det der poppper ned */
-                opacity: 1;
-                list-style-type: none;
-                display: flex;
-                justify-content: flex-end;
-                width: 100%;
-
-            }
-
-            #menuknap {
-                /*dåsen */
-                display: none;
-            }
-
-        }
-
-        .wrapper {
-            /*wrapper omkring burgermenu */
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-
-        }
-
-        #nav {
-            background-color: #FAC177;
-        }
-
-        .logo {
-            /* billedet med logo */
-            height: 60px;
-            width: 60px;
-        }
-
-        .burgermenu {
-            /* billedet med burgermenu */
-            height: 60px;
-            width: 60px;
-        }
-
-        /* main */
-        main {
-            /* container for splash billedet */
-
-            background-image: url(billeder/splash.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-            height: 90vh;
-
-            display: grid;
-        }
-
-        h1 {
-            font-family: 'Abril Fatface', cursive;
-            color: #FAC177;
-            background-color: #093A82;
-            text-align: center;
-            margin: 0 auto;
-
-            font-size: 2rem;
-            width: 60vw;
-            padding: 1.5rem;
-            border-radius: 20px;
-        }
-
-        h2 {
-            font-family: 'Abril Fatface', cursive;
-            color: #FAC177;
-            background-color: #093A82;
-            text-align: center;
-
-            margin-bottom: 0;
-            margin-left: 10vw;
-            font-size: 1rem;
-            width: 40vw;
-            padding: 1.5rem;
-            border-radius: 20px;
-        }
-
-        .overskrift {
-            /* container for overskriften */
-            align-self: center;
-        }
-    </style>
-
-
-
-
-</head>
-
-<body>
-
-    <!-- Splash  -->
+         </head> <body>
+        <!-- Splash
+        -->
     <section id="splash">
 
         <div id="nav">
@@ -152,22 +30,31 @@
 
 
                 <div id="lukkeknap" class="hide">X</div>
-                <ul id="menu" class="hide">
-                    <li><a href="#">Kampangevideo</a></li>
-                    <li><a href="#">Smag</a></li>
-                    <li><a href="#">Spil</a></li>
 
+                <ul id="menu" class="hidden menuclass">
+
+
+                    <li class="listemenu"><a id="a1" class="amenu" href="#">Video</a></li>
+                    <li id="listemidtid" class="listemenu listemidt" ><a id="a2" class="amenu" href="#">Smag</a></li>
+                    <li class="listemenu"><a id="a3" class="amenu" href="#">Spil</a></li>
                 </ul>
+
+
+
+
+
+
             </div>
 
         </div>
         <main>
             <div class="overskrift">
-                <h2>-en øl for alle</h2>
-                <h1>Tuborg Nul</h1>
+                <h2 id="lilleoverskrift">-en øl for alle</h2>
+                <h1 id="bigoverskrift">Tuborg Nul</h1>
             </div>
         </main>
     </section>
+    <script src="script.js"></script>
 
 
 
@@ -175,7 +62,4 @@
 
 
 
-
-
-
-</body></html>
+    </body></html>
