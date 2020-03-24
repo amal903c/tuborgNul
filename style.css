@@ -284,19 +284,158 @@
 /* Teskt med kasser */
 
 
+/*Hele baggrunden:*/
+
+img {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#tekst_kasser {
+    background-color: #BEE0D9;
+    height: 45rem;
+    position: relative;
+
+}
+
+#section_tekstkasser {
+    background-color: #BEE0D9;
+}
+
+/*Orange bokse styling*/
+
+.orange_boks1 {
+    height: 150px;
+    width: 300px;
+    background-color: #FAC177;
+    top: 100px;
+    left: 13vw;
+    position: absolute;
+}
+
+.orange_boks2 {
+    height: 150px;
+    width: 300px;
+    background-color: #FAC177;
+    top: 400px;
+    left: 25vw;
+    position: absolute;
+}
+
+
+
+/*Tekst inde i boksene*/
+.orange_tekst1 {
+    position: relative;
+    width: 285px;
+    left: 90px;
+    top: 30px;
+    font-family: helvetica;
+    line-height: 25px;
+    color: #093A82;
+}
+
+.orange_tekst2 {
+    position: relative;
+    width: 290px;
+    left: -80px;
+    top: 30px;
+    font-family: helvetica;
+    line-height: 25px;
+    color: #093A82;
+}
+
+/*Tekst uden boks*/
+.tekst_udenboks {
+    position: relative;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.4rem;
+    top: 250px;
+    left: 30px;
+    color: #093A82;
+    background-color: #FAC177;
+    line-height: 35px;
+    padding: 5px;
+    width: 380px;
+}
+
+/*Billede*/
+.billede_kasser {
+    height: 650px;
+    max-width: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(billeder/beer.jpeg);
+
+}
+
+
+.store_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.billede_wrap {
+    text-align: -webkit-center;
+    background-color: #BEE0D9;
+
+    flex-grow: 1;
+    flex-basis: 800px;
+}
+
+/*flex*/
+
+
+#tekst_kasser {
+    flex-grow: 1;
+    flex-basis: 800px;
+}
 
 
 
 
+/*Media query*/
+
+/*
+@media only screen and (min-width: 768px) {
+    #tekst_kasser {
+        flex-grow: 1;
+        flex-basis: 300px;
+    }
+
+    .billede_wrap {
+        flex-grow: 1;
+        flex-basis: 300px;
+    }
+}
+*/
 
 
+@media only screen and (min-width: 1024px) {
+    #tekst_kasser {
+        flex-grow: 1;
+        flex-basis: 300px;
+    }
 
+    .billede_wrap {
+        flex-grow: 1;
+        flex-basis: 300px;
+    }
 
-
-
-
-
-
+    .billede_kasser {
+        margin: 95px 0 0 0;
+        max-width: 300px;
+        height: 460px;
+    }
+}
 
 
 
