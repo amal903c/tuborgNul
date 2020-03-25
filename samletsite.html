@@ -44,7 +44,7 @@
         </div>
         <main>
             <div class="overskrift">
-                <h2 id="lilleoverskrift">-en øl for alle</h2>
+                <h2 id="lilleoverskrift">det handler om os</h2>
                 <h1 id="bigoverskrift">Tuborg Nul</h1>
             </div>
         </main>
@@ -57,8 +57,8 @@
 
         <div class="hygge_box">
             <div class="hygge_txt">
-                <h2>Det handler om hyggen</h2>
-                <p>... lad os ikke glemme den</p>
+                <h2>Et godt fællesskab er kernen i hygge</h2>
+                <p>... så glem ikke Tuborg Nul</p>
             </div>
         </div>
 
@@ -67,7 +67,7 @@
                 <img src="billeder/ros.jpg" alt="Roskilde Festival billede">
             </div>
             <div class="faellesskab_col faellesskab_txt">
-                <h2>Tuborg nul tror på det bedre
+                <h2>Tuborg Nul tror på det bedre
                     fællesskab</h2>
                 <p>Når vi har kontrol over os selv og tænker på hinanden.
                     Det handler om at vi skal hygge os sammen og være gode mod hinanden.</p>
@@ -76,7 +76,7 @@
 
         <div class="sammen_box">
             <div class="sammen_txt">
-                <p>Tuborg nul tror på at de bedste øjeblikke bliver nydt, når vi er sammen og når vi har det godt med hinanden
+                <p>Tuborg Nul tror på at de bedste øjeblikke bliver nydt, når vi er sammen og når vi har det godt med hinanden
                 </p>
             </div>
         </div>
@@ -117,15 +117,15 @@
             <div id="tekst_kasser">
 
                 <div class="orange_boks1">
-                    <div class="orange_tekst1">For det er når vi er sammen at vi hygger os bedst. Det er dem vi holder af og dem der holder af os der betyder noget </div>
+                    <div class="orange_tekst1">Tuborg Nul er ikke bare et alternativ, men en smagfuld pilsner, som kan nydes af alle </div>
                 </div>
 
 
 
 
                 <div class="orange_boks2">
-                    <div class="orange_tekst2">Det er vigtigt at anderkender hinanden,
-                        og gøre plads til forskelligthed, også hvis den forskellighed, er en alkoholfri øl
+                    <div class="orange_tekst2">Det er vigtigt at anderkende hinanden,
+                        og gøre plads til forskellighed, også hvis den forskellighed er en alkoholfri øl
                     </div>
                 </div>
 
@@ -173,6 +173,82 @@
         </div>
 
     </section>
+
+
+
+    <!--    TEKST BOKS-->
+    <section class="kompromis">
+        <div class="kompromis_box">
+            <div class="kompromis_txt">
+                <p>Tuborg Nul ligner en pilsner. <br>
+                    Tuborg Nul smager af pilsner. <br>
+                    Tuborg Nul ER en pilsner. <br>
+                    <br>
+                    Hvor meget går vi på kompromis med smagen, for at gøre Tuborg øl alkoholfri?
+                    Svaret er NUL
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--    SØJLEDIAGRAM-->
+    <section id="datavisualisering">
+        <p id="output"></p>
+
+        <h1 id="dataoverskrift">Salg af alkoholfri øl</h1>
+        <h2 id="bryg">Data fra bryggeriforeningen (gå til artiklen <a href="https://www.bryggeriforeningen.dk/artikler/flere-danskere-drikker-alkoholfrit-oel/">her
+            </a>)</h2>
+
+
+        <svg id="barchart" viewbox="-20 -20 220 220">
+
+            <g id="chart">
+                <text x="-20" y="5">5 Liter</text>
+                <text x="-20" y="20">4 Liter</text>
+                <text x="-20" y="40">3 Liter</text>
+                <text x="-20" y="60">2 Liter</text>
+                <text x="-20" y="80">1 Liter</text>
+                <text x="-20" y="100">0 Liter</text>
+
+                <text x="11.66" y="110">2013</text>
+                <text x="45.32" y="110">2014</text>
+                <text x="78.98" y="110">2015</text>
+                <text x="112.64" y="110">2016</text>
+                <text x="146.305" y="110">2017</text>
+                <text x="179.96" y="110">2018</text>
+
+
+                <line x1="0" x2="0" y1="100" y2="0"></line>
+                <line x1="0" x2="200" y1="0" y2="0"></line>
+                <line x1="0" x2="200" y1="100" y2="100"></line>
+                <line x1="200" x2="200" y1="100" y2="0"></line>
+
+                <line x1="0" x2="200" y1="20" y2="20"></line>
+                <line x1="0" x2="200" y1="40" y2="40"></line>
+                <line x1="0" x2="200" y1="60" y2="60"></line>
+                <line x1="0" x2="200" y1="80" y2="80"></line>
+            </g>
+
+
+            <g class="bars">
+
+
+                <line x1="16.66" x2="16.66" y1="0" y2="100" data-value="1,071" data-procent=""></line>
+                <line x1="50.32" x2="50.32" y1="0" y2="100" data-value="0,938" data-procent=""></line>
+                <line x1="83.98" x2="83.98" y1="0" y2="100" data-value="2,453" data-procent=""></line>
+                <line x1="117.64" x2="117.64" y1="0" y2="100" data-value="2,793" data-procent=""></line>
+                <line x1="151.305" x2="151.305" y1="0" y2="100" data-value="3,283" data-procent=""></line>
+                <line x1="184.96" x2="184.96" y1="0" y2="100" data-value="4,319" data-procent=""></line>
+
+            </g>
+        </svg>
+
+    </section>
+
+
+
+
 
     <!----------------SOCIALE MEDIER ******************** <!------------------>
 
