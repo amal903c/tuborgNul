@@ -92,6 +92,7 @@ img {
 
 #nav {
     background-color: #FAC177;
+    z-index: 10;
 }
 
 .logo {
@@ -328,10 +329,12 @@ main {
 .hygge_box {
     background-color: #093A82;
     height: 20rem;
+    display: grid;
 }
 
 .hygge_txt {
-    padding: 100px 0 0 0;
+
+    align-self: center;
 }
 
 .hygge_box h2 {
@@ -1002,7 +1005,8 @@ body {
     font-family: 'Abril Fatface', cursive;
     color: #FAC177;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2rem;
+    padding-top: 40px;
 }
 
 #infografik_wrapper {
@@ -1010,13 +1014,13 @@ body {
 }
 
 #infografik_wrapper #base_div {
-    width: 40%;
+
     margin: 0 auto;
 
     display: grid;
     height: 80vh;
 
-    width: 68%;
+    width: 80%;
     margin: 0 auto;
     max-width: 700px
 }
@@ -1088,11 +1092,7 @@ body {
 
 
 
-iframe {
-    width: 90%;
-    height: 50vw;
-    border-style: hidden;
-}
+
 
 /* -------BAre fylder så man kan se opdeling -------------------*/
 .space {
@@ -1104,6 +1104,7 @@ iframe {
 
 /* -------video -------------------*/
 
+/*
 #video {
     background-color: #093a82;
     width: 100%;
@@ -1114,17 +1115,52 @@ iframe {
 
 #video .sectionwrapper {
     padding: 10vw 0vw 20vw 0vw;
+
 }
 
 #video .txt {
     font-family: 'Abril Fatface', cursive;
     color: #fac177;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 #video .iframe_wrap {
     width: 65vw;
+
+}
+*/
+
+/*
+#video img {
+    align-self: center;
+}
+*/
+
+.image {
+    align-self: center;
+    margin: 0 auto
+}
+
+.image img {
+    width: 65vw;
+    object-fit: cover;
+    height: 60vh;
+}
+
+#sectionwrapper {
+    height: 100vh;
+    background-color: #093a82;
+    display: grid;
+    grid-template-rows: 100px auto
+}
+
+#kampangetext {
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    color: #fac177;
+    font-size: 2rem;
+    align-self: center
 }
 
 
@@ -1133,9 +1169,11 @@ iframe {
 
 #spil {
     background-color: #fac177;
+    /*
     width: 100%;
     justify-content: center;
     text-align: -webkit-center;
+*/
 }
 
 #spil .txt {
@@ -1155,8 +1193,25 @@ iframe {
 }
 
 
-#spil .sectionwrapper {
-    padding: 10vw 0vw 5vw 0vw;
+
+#spil #sectionwrapper {
+    background-color: #fac177;
+}
+
+#spil #spiltext {
+    font-family: 'Abril Fatface', cursive;
+    color: #093a82;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 37px;
+}
+
+iframe {
+    width: 90vw;
+    height: 50vw;
+    border-style: hidden;
+    max-width: 700px;
+    max-height: 400px;
 }
 
 
@@ -1446,8 +1501,12 @@ iframe {
 
     width: 68%;
     margin: 0 auto;
-    max-width: 700px
+    max-width: 700px;
+
+
 }
+
+#kampagnevideo_doku_wrapper #base_div img {}
 
 #base {
     align-self: center;
@@ -1549,17 +1608,28 @@ iframe {
     text-align: -webkit-center;
 }
 
-.kompromis_txt {}
+.kompromis_txt {
+    display: grid;
+}
+
+
 
 .kompromis_txt p {
-    padding: 100px 92px;
+    padding: 100px 78px;
     max-width: 700px;
     margin: 0;
     color: #093A82;
     font-family: 'Abril Fatface', cursive;
     font-size: 1.5rem;
     line-height: 3rem;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
 
+}
+
+.kompromis {
+    background-color: #BEE0D9;
 }
 
 
