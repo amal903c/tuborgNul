@@ -1123,7 +1123,7 @@ iframe {
 }
 
 #video .iframe_wrap {
-    width: 85vw;
+    width: 65vw;
 }
 
 
@@ -1134,6 +1134,7 @@ iframe {
     background-color: #fac177;
     width: 100%;
     justify-content: center;
+    text-align: -webkit-center;
 }
 
 #spil .txt {
@@ -1148,6 +1149,7 @@ iframe {
             width: 85vw;
             height: 46vw;
 */
+    width: 80vw;
     text-align: center;
 }
 
@@ -1457,21 +1459,117 @@ iframe {
 
 
 
+/********SØJLEDIIAGRAM*********/
+#barchart {
+    max-width: 700px;
+}
+
+#chart line {
+    stroke: #093A82;
+    stroke-width: .5;
+
+}
+
+#chart text {
+    font-size: 5px;
+    font-family: sans-serif;
+    color: #FAC177;
+}
+
+.bars {
+    stroke-width: 23.33;
+    stroke: #093A82;
+}
+
+
+
+#output {
+    position: absolute;
+    background-color: cornflowerblue;
+    color: white;
+    padding: .3em;
+    display: none;
+}
+
+#dataoverskrift {
+    font-family: 'Abril Fatface', cursive;
+    color: #093A82;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+#bryg {
+    font-family: helvetica;
+    color: #093A82;
+    text-align: center;
+    font-size: 1em;
+}
+
+#datavisualisering {
+    background-color: #FAC177;
+    height: 100vh;
+    padding: 5vw 0vw 1vw 0vw;
+    text-align: center;
+}
+
+@media only screen and (min-width: 320px) {
+    #barchart {
+        width: 90vw;
+        /*        margin-left: 10px;*/
+    }
+
+}
+
+#datavisualisering a {
+    color: #093A82;
+}
+
+#datavisualiserinig a:visited {
+    color: #093A82;
+}
+
+/*
+@media only screen and (min-width: 768px) {
+    #barchart {
+        margin-left: 140px;
+    }*/
 
 
 
 
+/*Kompromis med en alkoholfri øl************/
 
 
 
 
+.kompromis_box {
+    background-color: #BEE0D9;
+    height: 35rem;
+    text-align: -webkit-center;
+}
+
+.kompromis_txt {}
+
+.kompromis_txt p {
+    padding: 100px 92px;
+    max-width: 700px;
+    margin: 0;
+    color: #093A82;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.5rem;
+    line-height: 3rem;
+
+}
 
 
 
+@media only screen and (min-width: 700px) {
+    .kompromis_box {
+        height: 29rem;
+    }
 
 
-
-
+}
 
 
 
