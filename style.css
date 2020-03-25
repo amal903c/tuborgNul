@@ -2,7 +2,18 @@
 
 
 
+* {
+    box-sizing: border-box;
 
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
 
 
 
@@ -30,7 +41,143 @@
 /* MENU */
 
 
+.hide {
+    display: none;
+}
 
+.hidden {
+    opacity: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    #menu {
+        /*det der poppper ned */
+        opacity: 1;
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        width: 40%;
+        background-color: transparent;
+        height: 70px;
+        flex-direction: row;
+        align-items: center;
+
+
+    }
+
+    #menuknap {
+        /*dåsen */
+        display: none;
+    }
+
+    #listemidtid {
+        margin: 0;
+    }
+
+    #a1,
+    #a2,
+    #a3 {
+        font-size: 1.8rem;
+    }
+
+}
+
+.wrapper {
+    /*wrapper omkring burgermenu */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+#nav {
+    background-color: #FAC177;
+}
+
+.logo {
+    /* billedet med logo */
+    height: 60px;
+    width: 60px;
+}
+
+#logo {
+    z-index: 1;
+}
+
+.burgermenu {
+    /* billedet med burgermenu */
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+
+}
+
+#menuknap {
+    z-index: 1;
+}
+
+#lukkeknap {
+    font-size: 3rem;
+    color: #093A82;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    margin-right: 14px;
+    z-index: 1;
+    /*
+    text-align: right;
+    position: relative;
+*/
+
+}
+
+.menuclass {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+
+    background-color: #FAC177;
+    border-radius: 0px 0 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0;
+    height: 85vw;
+    width: 100%;
+    margin: 0;
+
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+.wrappermenu {
+
+
+    display: grid;
+}
+
+.listemenu {
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.amenu {
+    color: #093A82;
+    text-decoration: none;
+
+    font-family: 'Abril Fatface', cursive;
+    cursor: pointer;
+
+    font-size: 2.6rem;
+
+}
+
+.listemidt {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
 
 
 
@@ -59,31 +206,62 @@
 
 /* FORSIDE */
 
+#splash {
+    display: grid;
+    grid-template-rows: 70px auto;
+}
 
+/* main */
+main {
+    /* container for splash billedet */
 
+    background-image: url(billeder/splash.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
 
+    display: grid;
+}
 
+#bigoverskrift {
+    font-family: 'Abril Fatface', cursive;
+    color: #FAC177;
+    background-color: #093A82;
+    text-align: center;
+    margin: 0 auto;
 
+    font-size: 2rem;
+    width: 60vw;
+    padding: 1.2rem;
+    border-radius: 20px;
 
+    max-width: 360px
+}
 
+#lilleoverskrift {
+    font-family: 'Abril Fatface', cursive;
+    color: #FAC177;
+    background-color: #093A82;
+    text-align: center;
 
+    margin-bottom: 13px;
+    font-size: 1rem;
+    width: 40vw;
+    max-width: 256px;
+    padding: 1.2rem;
+    border-radius: 20px;
 
+    align-self: center;
+    margin-right: 31vw;
+}
 
+.overskrift {
+    /* container for overskriften */
+    align-self: center;
+    display: flex;
+    flex-direction: column;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 

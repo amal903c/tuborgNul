@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuborg Nul</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+
+
+        }
+
+        img {
+            width: 100%;
+
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        /* -------BAre fylder så man kan se opdeling -------------------*/
+        .space {
+            background-color: #093a82;
+            width: 90vw;
+            height: 20vw;
+
+        }
+
+        /* -------video -------------------*/
+
+        #video {
+            background-color: #fac177;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        #video .sectionwrapper {
+            padding: 10vw 0vw 20vw 0vw;
+        }
+
+        #video .txt {
+            font-family: 'Abril Fatface', cursive;
+            color: #093a82;
+            text-align: center;
+            font-size: 1.3rem;
+        }
+
+        #video .iframe_wrap {
+            width: 85vw;
+        }
+
+
+        /* -------spil -------------------*/
+
+
+        #spil {
+            background-color: #fac177;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        #spil .txt {
+            font-family: 'Abril Fatface', cursive;
+            color: #093a82;
+            text-align: center;
+            font-size: 1.3rem;
+        }
+
+        #spil .iframe_wrap {
+            width: 85vw;
+            height: 46vw;
+        }
+
+
+        #spil .sectionwrapper {
+            padding: 10vw 0vw 20vw 0vw;
+        }
+
+
+
+
+
+
+        @media only screen and (min-width: 1024px) {
+
+            #video .txt,
+            #spil .txt {
+                font-size: 2rem;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <section id="video">
+        <div class="sectionwrapper">
+            <div class="txt">
+                <h1>Kampagnevideo</h1>
+
+            </div>
+            <div class="iframe_wrap">
+                <img src="video.jpg" alt="billede placeholder for kampagnevideo">
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!----------------BAre fylder så man kan se opdeling-->
+    <div class="space"></div>
+    <!------------------>
+
+
+
+    <section id="spil">
+
+        <div class="sectionwrapper">
+            <div class="txt">
+                <h1>psst... prøv også det nye Tuborg spil</h1>
+            </div>
+            <div class="iframe_wrap">
+                <iframe src="http://katrinemeyer.dk/kea/08_brugercenteret_design/tuborg_kampange_spil/index.html?fbclid=IwAR2QWTfsmZWvZQvP_HDNCtvrrA4lMN0Tg3BCC1wM4IcNl8FJkqi6LAusKSM" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+    <script src=""></script>
+</body>
+
+</html>
