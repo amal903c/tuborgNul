@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <title></title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        img {
+            width: 100%;
+        }
+
+
+        .wrap_some {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #fac177;
+
+            text-align: center;
+        }
+
+        .col_some {
+            flex-grow: 1;
+            flex-basis: 800px;
+            margin: 20px 0 20px 0;
+            text-align: -webkit-center;
+        }
+
+        #some img {
+            width: 400px;
+        }
+
+        #some h2 {
+            font-family: 'Abril Fatface', cursive;
+            font-size: 2rem;
+            color: #BEE0D9;
+        }
+
+        #some .tekst {
+            position: relative;
+            top: 200px;
+            max-width: 350px;
+            background-color: #093A82;
+            padding: 1px 5px 1px 5px;
+        }
+
+        /*        MEDIA QUERY*/
+
+
+        @media only screen and (min-width: 1024px) {
+            .col_some {
+                flex-basis: 200px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <section id="some">
+        <div class="wrap_some">
+            <div class="col_some">
+                <div class="tekst">
+                    <h2>Se med på Instagram</h2>
+                </div>
+                <img src="billeder/instagram.jpg" alt="tuborg nul instagram">
+            </div>
+            <div class="col_some">
+                <div class="tekst">
+                    <h2>Se med på Facebook</h2>
+                </div>
+                <img src="billeder/facebook.png" alt="tuborg nul facebook">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script src=""></script>
+</body>
+
+</html>

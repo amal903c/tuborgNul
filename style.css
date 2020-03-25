@@ -448,6 +448,7 @@ main {
     .faellesskab_txt p {
         line-height: 2rem;
     }
+}
 
 
 
@@ -577,162 +578,153 @@ main {
 
 
 
+/* Teskt med kasser */
 
-    /* Teskt med kasser */
 
+/*Hele baggrunden:*/
 
-    /*Hele baggrunden:*/
+img {
+    width: 100%;
+}
 
-    img {
-        width: 100%;
-    }
+body {
+    margin: 0;
+}
 
-    body {
-        margin: 0;
-    }
+* {
+    box-sizing: border-box;
+}
 
-    * {
-        box-sizing: border-box;
-    }
+#tekst_kasser {
+    background-color: #BEE0D9;
+    height: 45rem;
+    position: relative;
 
+}
+
+#section_tekstkasser {
+    background-color: #BEE0D9;
+}
+
+/*Orange bokse styling*/
+
+.orange_boks1 {
+    height: 150px;
+    width: 300px;
+    background-color: #FAC177;
+    top: 100px;
+    left: 13vw;
+    position: absolute;
+}
+
+.orange_boks2 {
+    height: 150px;
+    width: 300px;
+    background-color: #FAC177;
+    top: 400px;
+    left: 25vw;
+    position: absolute;
+}
+
+
+
+/*Tekst inde i boksene*/
+.orange_tekst1 {
+    position: relative;
+    width: 285px;
+    left: 90px;
+    top: 30px;
+    font-family: helvetica;
+    line-height: 25px;
+    color: #093A82;
+}
+
+.orange_tekst2 {
+    position: relative;
+    width: 290px;
+    left: -80px;
+    top: 30px;
+    font-family: helvetica;
+    line-height: 25px;
+    color: #093A82;
+}
+
+/*Tekst uden boks*/
+.tekst_udenboks {
+    position: relative;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.4rem;
+    top: 250px;
+    left: 30px;
+    color: #093A82;
+    background-color: #FAC177;
+    line-height: 35px;
+    padding: 5px;
+    width: 380px;
+}
+
+/*Billede*/
+.billede_kasser {
+    height: 650px;
+    max-width: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(billeder/beer.jpeg);
+    margin: 0 0 30px 0;
+
+}
+
+
+.store_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.billede_wrap {
+    text-align: -webkit-center;
+    background-color: #BEE0D9;
+
+    flex-grow: 1;
+    flex-basis: 800px;
+}
+
+/*flex*/
+
+
+#tekst_kasser {
+    flex-grow: 1;
+    flex-basis: 800px;
+}
+
+
+
+
+/*Media query*/
+
+
+
+@media only screen and (min-width: 1024px) {
     #tekst_kasser {
-        background-color: #BEE0D9;
-        height: 45rem;
-        position: relative;
-
+        flex-grow: 1;
+        flex-basis: 300px;
     }
 
-    #section_tekstkasser {
-        background-color: #BEE0D9;
+    .billede_wrap {
+        flex-grow: 1;
+        flex-basis: 300px;
     }
 
-    /*Orange bokse styling*/
-
-    .orange_boks1 {
-        height: 150px;
-        width: 300px;
-        background-color: #FAC177;
-        top: 100px;
-        left: 13vw;
-        position: absolute;
-    }
-
-    .orange_boks2 {
-        height: 150px;
-        width: 300px;
-        background-color: #FAC177;
-        top: 400px;
-        left: 25vw;
-        position: absolute;
-    }
-
-
-
-    /*Tekst inde i boksene*/
-    .orange_tekst1 {
-        position: relative;
-        width: 285px;
-        left: 90px;
-        top: 30px;
-        font-family: helvetica;
-        line-height: 25px;
-        color: #093A82;
-    }
-
-    .orange_tekst2 {
-        position: relative;
-        width: 290px;
-        left: -80px;
-        top: 30px;
-        font-family: helvetica;
-        line-height: 25px;
-        color: #093A82;
-    }
-
-    /*Tekst uden boks*/
-    .tekst_udenboks {
-        position: relative;
-        font-family: 'Abril Fatface', cursive;
-        font-size: 1.4rem;
-        top: 250px;
-        left: 30px;
-        color: #093A82;
-        background-color: #FAC177;
-        line-height: 35px;
-        padding: 5px;
-        width: 380px;
-    }
-
-    /*Billede*/
     .billede_kasser {
-        height: 650px;
-        max-width: 400px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url(billeder/beer.jpeg);
-
-    }
-
-
-    .store_wrapper {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-
-    .billede_wrap {
-        text-align: -webkit-center;
-        background-color: #BEE0D9;
-
-        flex-grow: 1;
-        flex-basis: 800px;
-    }
-
-    /*flex*/
-
-
-    #tekst_kasser {
-        flex-grow: 1;
-        flex-basis: 800px;
-    }
-
-
-
-
-    /*Media query*/
-
-    /*
-@media only screen and (min-width: 768px) {
-    #tekst_kasser {
-        flex-grow: 1;
-        flex-basis: 300px;
-    }
-
-    .billede_wrap {
-        flex-grow: 1;
-        flex-basis: 300px;
+        margin: 95px 0 0 0;
+        max-width: 300px;
+        height: 460px;
     }
 }
-*/
 
 
-    @media only screen and (min-width: 1024px) {
-        #tekst_kasser {
-            flex-grow: 1;
-            flex-basis: 300px;
-        }
 
-        .billede_wrap {
-            flex-grow: 1;
-            flex-basis: 300px;
-        }
 
-        .billede_kasser {
-            margin: 95px 0 0 0;
-            max-width: 300px;
-            height: 460px;
-        }
-    }
 
 
 
@@ -836,13 +828,13 @@ main {
 
 
 
+/* Teskt med kasser */
 
+/* Video */
 
 
 
-    /* Teskt med kasser */
 
-    /* Video */
 
 
 
@@ -942,13 +934,13 @@ main {
 
 
 
+/* Video slut */
 
+/* Infografik start */
 
 
 
-    /* Video slut */
 
-    /* Infografik start */
 
 
 
@@ -1042,16 +1034,16 @@ main {
 
 
 
+/* Infografik start */
 
 
+/* Spil og video start */
 
+/* Spil start */
 
-    /* Infografik start */
 
 
-    /* Spil og video start */
 
-    /* Spil start */
 
 
 
@@ -1059,77 +1051,73 @@ main {
 
 
 
+iframe {
+    width: 90%;
+    height: 50vw;
+    border-style: hidden;
+}
 
+/* -------BAre fylder så man kan se opdeling -------------------*/
+.space {
+    background-color: #093a82;
+    width: 90vw;
+    height: 20vw;
 
+}
 
+/* -------video -------------------*/
 
-    iframe {
-        width: 90%;
-        height: 50vw;
-        border-style: hidden;
-    }
+#video {
+    background-color: #fac177;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
-    /* -------BAre fylder så man kan se opdeling -------------------*/
-    .space {
-        background-color: #093a82;
-        width: 90vw;
-        height: 20vw;
+#video .sectionwrapper {
+    padding: 10vw 0vw 20vw 0vw;
+}
 
-    }
+#video .txt {
+    font-family: 'Abril Fatface', cursive;
+    color: #093a82;
+    text-align: center;
+    font-size: 1.3rem;
+}
 
-    /* -------video -------------------*/
+#video .iframe_wrap {
+    width: 85vw;
+}
 
-    #video {
-        background-color: #fac177;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
 
-    #video .sectionwrapper {
-        padding: 10vw 0vw 20vw 0vw;
-    }
+/* -------spil -------------------*/
 
-    #video .txt {
-        font-family: 'Abril Fatface', cursive;
-        color: #093a82;
-        text-align: center;
-        font-size: 1.3rem;
-    }
 
-    #video .iframe_wrap {
-        width: 85vw;
-    }
+#spil {
+    background-color: #fac177;
+    width: 100%;
+    justify-content: center;
+}
 
+#spil .txt {
+    font-family: 'Abril Fatface', cursive;
+    color: #093a82;
+    text-align: center;
+    font-size: 1.3rem;
+}
 
-    /* -------spil -------------------*/
-
-
-    #spil {
-        background-color: #fac177;
-        width: 100%;
-        justify-content: center;
-    }
-
-    #spil .txt {
-        font-family: 'Abril Fatface', cursive;
-        color: #093a82;
-        text-align: center;
-        font-size: 1.3rem;
-    }
-
-    #spil .iframe_wrap {
-        /*
+#spil .iframe_wrap {
+    /*
             width: 85vw;
             height: 46vw;
 */
-        text-align: center;
-    }
+    text-align: center;
+}
 
 
-    #spil .sectionwrapper {
-        padding: 10vw 0vw 20vw 0vw;
-    }
+#spil .sectionwrapper {
+    padding: 10vw 0vw 5vw 0vw;
+}
 
 
 
@@ -1243,7 +1231,7 @@ main {
 
 
 
-    /* Spil slut */
+/* Spil slut */
 
 
 
@@ -1255,51 +1243,124 @@ main {
 
 
 
-    /* Footer start */
+/* Footer start */
 
 
-    /*Layout*/
-    .wrap_footer {
-        display: flex;
-        flex-wrap: wrap;
-        background-color: #BEE0D9;
-    }
+/*Layout*/
+.wrap_footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #BEE0D9;
+}
 
+.col_footer {
+    flex-grow: 1;
+    flex-basis: 800px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+/*Styling af tekst*/
+#footer ul {
+
+    padding: 0;
+}
+
+#footer li {
+    list-style: none;
+    line-height: 30px;
+    font-family: helvetica;
+    font-size: 0.7rem;
+}
+
+#footer b {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1rem;
+}
+
+
+/*MEDIA QUERY*/
+
+@media only screen and (min-width: 600px) {
     .col_footer {
-        flex-grow: 1;
-        flex-basis: 800px;
-        text-align: center;
-        padding-top: 30px;
-        padding-bottom: 30px;
+        flex-basis: 200px;
+    }
+}
+
+/*footer slut*/
+
+/*some start*/
+
+#some {
+    background-color: #fac177;
+    width: 100%;
+    justify-content: center;
+}
+
+.wrap_some {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fac177;
+    padding: 0;
+    text-align: center;
+}
+
+.col_some {
+    flex-grow: 1;
+    flex-basis: 800px;
+
+    margin: 0 0 10vw 0;
+    text-align: -webkit-center;
+}
+
+#some img {
+    width: 400px;
+}
+
+#some h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2rem;
+    color: #BEE0D9;
+}
+
+#some .tekst {
+    position: relative;
+    top: 200px;
+    max-width: 350px;
+    background-color: #093A82;
+    padding: 1px 5px 1px 5px;
+}
+
+#some .txt {
+    font-family: 'Abril Fatface', cursive;
+    color: #093a82;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 20px 0vw 0vw 0vw;
+}
+
+
+
+
+
+/*        MEDIA QUERY*/
+
+
+@media only screen and (min-width: 1024px) {
+    .col_some {
+        flex-basis: 200px;
     }
 
+}
 
-    /*Styling af tekst*/
-    #footer ul {
 
-        padding: 0;
-    }
 
-    #footer li {
-        list-style: none;
-        line-height: 30px;
-        font-family: helvetica;
-        font-size: 0.7rem;
-    }
 
-    #footer b {
-        font-family: 'Abril Fatface', cursive;
-        font-size: 1rem;
-    }
 
 
-    /*MEDIA QUERY*/
 
-    @media only screen and (min-width: 600px) {
-        .col_footer {
-            flex-basis: 200px;
-        }
-    }
 
 
 
@@ -1347,18 +1408,4 @@ main {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-    /* footer slut */
-
-    /* Spil slut */
+/* some slut */
