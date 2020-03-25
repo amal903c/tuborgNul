@@ -831,6 +831,42 @@ body {
 
 /* Infografik start */
 
+#infografik {
+    display: grid;
+    background-color: #093A82;
+    height: 100vh;
+}
+
+h1 {
+    font-family: 'Abril Fatface', cursive;
+    color: #FAC177;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+#infografik_wrapper {
+    position: relative;
+}
+
+#infografik_wrapper #base_div {
+    width: 40%;
+    margin: 0 auto;
+
+    display: grid;
+    height: 80vh;
+
+    width: 68%;
+    margin: 0 auto;
+    max-width: 700px
+}
+
+#base {
+    align-self: center;
+}
+
+
+
+
 
 
 
