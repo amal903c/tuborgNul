@@ -929,7 +929,7 @@ body {
 
 /* Infografik start */
 
-/* Spil start */
+/* Spil og video start */
 
 
 
@@ -939,6 +939,75 @@ body {
 
 
 
+
+
+iframe {
+    width: 90%;
+    height: 50vw;
+    border-style: hidden;
+}
+
+/* -------BAre fylder så man kan se opdeling -------------------*/
+.space {
+    background-color: #093a82;
+    width: 90vw;
+    height: 20vw;
+
+}
+
+/* -------video -------------------*/
+
+#video {
+    background-color: #fac177;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#video .sectionwrapper {
+    padding: 10vw 0vw 20vw 0vw;
+}
+
+#video .txt {
+    font-family: 'Abril Fatface', cursive;
+    color: #093a82;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+#video .iframe_wrap {
+    width: 85vw;
+}
+
+
+/* -------spil -------------------*/
+
+
+#spil {
+    background-color: #fac177;
+    width: 100%;
+    justify-content: center;
+}
+
+#spil .txt {
+    font-family: 'Abril Fatface', cursive;
+    color: #093a82;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+#spil .iframe_wrap {
+    /*
+            width: 85vw;
+            height: 46vw;
+*/
+    text-align: center;
+}
+
+
+#spil .sectionwrapper {
+    padding: 10vw 0vw 20vw 0vw;
+}
 
 
 
@@ -1053,3 +1122,118 @@ body {
 
 
 /* Spil slut */
+
+
+
+
+
+
+
+
+
+
+
+/* Footer start */
+
+
+/*Layout*/
+.wrap_footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #BEE0D9;
+}
+
+.col_footer {
+    flex-grow: 1;
+    flex-basis: 800px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+/*Styling af tekst*/
+#footer ul {
+
+    padding: 0;
+}
+
+#footer li {
+    list-style: none;
+    line-height: 30px;
+    font-family: helvetica;
+    font-size: 0.7rem;
+}
+
+#footer b {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1rem;
+}
+
+
+/*MEDIA QUERY*/
+
+@media only screen and (min-width: 600px) {
+    .col_footer {
+        flex-basis: 200px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer slut */
