@@ -632,11 +632,12 @@ body {
 .orange_tekst1 {
     position: relative;
     width: 285px;
-    left: 90px;
+    left: 130px;
     top: 30px;
     font-family: helvetica;
     line-height: 25px;
     color: #093A82;
+    font-size: 1rem;
 }
 
 .orange_tekst2 {
@@ -1286,7 +1287,7 @@ iframe {
 .wrap_footer {
     display: flex;
     flex-wrap: wrap;
-    background-color: #BEE0D9;
+    background-color: #e6e6e6;
 }
 
 .col_footer {
@@ -1337,7 +1338,7 @@ iframe {
 /*some start*/
 
 #some {
-    background-color: #fac177;
+    background-color: #BEE0D9;
     width: 100%;
     justify-content: center;
     padding: 10vw 0vw 5vw 0vw;
@@ -1346,7 +1347,7 @@ iframe {
 .wrap_some {
     display: flex;
     flex-wrap: wrap;
-    background-color: #fac177;
+    background-color: #BEE0D9;
     padding: 0;
 }
 
@@ -1371,7 +1372,7 @@ iframe {
 #some h2 {
     font-family: 'Abril Fatface', cursive;
     font-size: 2rem;
-    color: #BEE0D9;
+    color: #fac177;
 }
 
 #some .tekst {
