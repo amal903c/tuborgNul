@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <title>interaktiv</title>
+
+    <style>
+        #barchart {
+            max-width: 700px;
+        }
+
+        #chart line {
+            stroke: #093A82;
+            stroke-width: .5;
+
+        }
+
+        #chart text {
+            font-size: 5px;
+            font-family: sans-serif;
+            color: #FAC177;
+        }
+
+        .bars {
+            stroke-width: 23.33;
+            stroke: #093A82;
+        }
+
+
+
+        #output {
+            position: absolute;
+            background-color: cornflowerblue;
+            color: white;
+            padding: .3em;
+            display: none;
+        }
+
+        #dataoverskrift {
+            font-family: 'Abril Fatface', cursive;
+            color: #093A82;
+            text-align: center;
+            font-size: 2.5em;
+        }
+
+        #bryg {
+            font-family: 'Abril Fatface', cursive;
+            color: #093A82;
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        #datavisualisering {
+            background-color: #FAC177;
+            height: 100vh;
+        }
+
+        @media only screen and (min-width: 320px) {
+            #barchart {
+                width: 90vw;
+                margin-left: 10px;
+            }
+
+        }
+
+        @media only screen and (min-width: 768px) {
+            #barchart {
+                margin-left: 140px;
+            }
+
+    </style>
+</head>
+
+<body>
+
+    <section id="datavisualisering">
+        <p id="output"></p>
+
+        <h1 id="dataoverskrift">Salg af alkoholfri øl</h1>
+        <h2 id="bryg">Bryggeriforeningen</h2>
+
+
+        <svg id="barchart" viewbox="-20 -20 220 220">
+
+            <g id="chart">
+                <text x="-20" y="5">5 Liter</text>
+                <text x="-20" y="20">4 Liter</text>
+                <text x="-20" y="40">3 Liter</text>
+                <text x="-20" y="60">2 Liter</text>
+                <text x="-20" y="80">1 Liter</text>
+                <text x="-20" y="100">0 Liter</text>
+
+                <text x="11.66" y="110">2013</text>
+                <text x="45.32" y="110">2014</text>
+                <text x="78.98" y="110">2015</text>
+                <text x="112.64" y="110">2016</text>
+                <text x="146.305" y="110">2017</text>
+                <text x="179.96" y="110">2018</text>
+
+
+                <line x1="0" x2="0" y1="100" y2="0"></line>
+                <line x1="0" x2="200" y1="0" y2="0"></line>
+                <line x1="0" x2="200" y1="100" y2="100"></line>
+                <line x1="200" x2="200" y1="100" y2="0"></line>
+
+                <line x1="0" x2="200" y1="20" y2="20"></line>
+                <line x1="0" x2="200" y1="40" y2="40"></line>
+                <line x1="0" x2="200" y1="60" y2="60"></line>
+                <line x1="0" x2="200" y1="80" y2="80"></line>
+            </g>
+
+
+            <g class="bars">
+
+
+                <line x1="16.66" x2="16.66" y1="0" y2="100" data-value="1,071" data-procent=""></line>
+                <line x1="50.32" x2="50.32" y1="0" y2="100" data-value="0,938" data-procent=""></line>
+                <line x1="83.98" x2="83.98" y1="0" y2="100" data-value="2,453" data-procent=""></line>
+                <line x1="117.64" x2="117.64" y1="0" y2="100" data-value="2,793" data-procent=""></line>
+                <line x1="151.305" x2="151.305" y1="0" y2="100" data-value="3,283" data-procent=""></line>
+                <line x1="184.96" x2="184.96" y1="0" y2="100" data-value="4,319" data-procent=""></line>
+
+            </g>
+        </svg>
+    </section>
+
+
+
+    <script>
+        const values = [21.42,
+            18.76,
+            49.06,
+            55.86,
+            65.66,
+            86.38
+        ];
+
+        const total = values.reduce((sum, value) => sum + value);
+        const output = document.querySelector("#output");
+
+        document.querySelectorAll(".bars line").forEach((bar, i) => {
+            bar.setAttribute("y1", 100 - values[i]);
+            //            bar.setAttribute("data-value", values[i]);
+            //            bar.setAttribute("data-procent", values[i] / total * 100);
+            bar.addEventListener("mouseover", e => vis(e))
+            bar.addEventListener("mouseout", skjul)
+        });
+
+        function vis(e) {
+            output.textContent = e.target.dataset.value + " millioner liter";
+            output.style.display = "block";
+            window.addEventListener("mouseover", followMouse);
+        }
+
+        function followMouse(e) {
+            output.style.top = (e.clientY - 50) + 'px';
+            output.style.left = (e.clientX) + 'px';
+        }
+
+        function skjul() {
+            output.style.display = "none";
+            window.removeEventListener("mouseover", followMouse);
+        }
+
+    </script>
+
+</body>
+
+</html>
