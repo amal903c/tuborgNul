@@ -399,7 +399,7 @@ main {
 
 /* Sammen boks */
 .sammen_box {
-    background-color: #093A82;
+    background-color: #BEE0D9;
     height: 19rem;
 }
 
@@ -408,7 +408,7 @@ main {
 .sammen_txt p {
     padding: 60px 92px;
     margin: 0;
-    color: #FAC177;
+    color: #093A82;
     font-family: 'Abril Fatface', cursive;
     font-size: calc(1.3rem + 1.3vw);
     line-height: 2.2rem;
@@ -1104,7 +1104,7 @@ iframe {
 /* -------video -------------------*/
 
 #video {
-    background-color: #fac177;
+    background-color: #093a82;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -1116,9 +1116,9 @@ iframe {
 
 #video .txt {
     font-family: 'Abril Fatface', cursive;
-    color: #093a82;
+    color: #fac177;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 2.5rem;
 }
 
 #video .iframe_wrap {
@@ -1139,7 +1139,7 @@ iframe {
     font-family: 'Abril Fatface', cursive;
     color: #093a82;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 2rem;
 }
 
 #spil .iframe_wrap {
@@ -1340,6 +1340,7 @@ iframe {
     background-color: #fac177;
     width: 100%;
     justify-content: center;
+    padding: 10vw 0vw 5vw 0vw;
 }
 
 .wrap_some {
@@ -1347,7 +1348,6 @@ iframe {
     flex-wrap: wrap;
     background-color: #fac177;
     padding: 0;
-    text-align: center;
 }
 
 .col_some {
@@ -1385,9 +1385,9 @@ iframe {
 #some .txt {
     font-family: 'Abril Fatface', cursive;
     color: #093a82;
+    font-size: 1.5rem;
+    padding: 0px 20px 0px 20px;
     text-align: center;
-    font-size: 1.3rem;
-    padding: 20px 0vw 0vw 0vw;
 }
 
 
