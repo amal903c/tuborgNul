@@ -1109,6 +1109,7 @@ iframe {
     width: 100%;
     display: flex;
     justify-content: center;
+    text-align: -webkit-center;
 }
 
 #video .sectionwrapper {
@@ -1544,7 +1545,7 @@ iframe {
 
 .kompromis_box {
     background-color: #BEE0D9;
-    height: 35rem;
+    height: 45rem;
     text-align: -webkit-center;
 }
 
@@ -1563,7 +1564,7 @@ iframe {
 
 
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 540px) {
     .kompromis_box {
         height: 29rem;
     }
